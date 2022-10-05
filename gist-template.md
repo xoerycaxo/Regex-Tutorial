@@ -69,13 +69,24 @@ Bracket expressions are composed of characters and/or character classes encompas
 In the case of the password strength validation Regex, bracket expressions include `[a-z]` and `[A-Z]` which match any character from lowercase `a` through `z` and uppercase `A` through `Z`, respectively. The `[!@#\$%\^&\*]` will match any of the special characters within that set as well.
 ### Greedy Match
 
+All quantifiers (`?`, `*`, `+`, `{m,n}`) are recognized as greedy operators due to their default tendency of grasping as many characters as possible for a match.
 
-
+In the case of the password strength validation Regex, the `.*` before every bracket expression will try to match any amount of anything.
 
 ### Positive Look-ahead 
 
+Positive look-aheads are used after a `^` anchor in order to validate a condition by triggering each look-ahead one by one at the beginning of the string.
+
+In the case of the password strength validation Regex, the `(?=.*[A-Z])` for example, matches that the password must contain at least one uppercase ASCII letter after any zero or more characters.
+
 ### Resources
+
+* [](https://regexr.com/)
+
+* [](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Written by Eryva Spence- Pieritz a learning full stack developer.
+
+To see more projects please visit: [](https://github.com/xoerycaxo)
