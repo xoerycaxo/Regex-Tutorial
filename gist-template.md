@@ -22,13 +22,12 @@ To satisfy the password strength criteria, a password must contain:
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Greedy Match](#greedy-and-lazy-match)
+- [Positive-Look-ahead](#Positive-look-ahead)
+- [Resources](#Resources)
+- [Author](#Author)
 
 ## Regex Components
 
@@ -68,13 +67,14 @@ In the case of the password strength validation Regex: `^(?=.*[a-z])(?=.*[A-Z])(
 Bracket expressions are composed of characters and/or character classes encompassed within brackets.
 
 In the case of the password strength validation Regex, bracket expressions include `[a-z]` and `[A-Z]` which match any character from lowercase `a` through `z` and uppercase `A` through `Z`, respectively. The `[!@#\$%\^&\*]` will match any of the special characters within that set as well.
-### Greedy and Lazy Match
+### Greedy Match
 
-### Boundaries
 
-### Back-references
 
-### Look-ahead and Look-behind
+
+### Positive Look-ahead 
+
+### Resources
 
 ## Author
 
