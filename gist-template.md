@@ -34,6 +34,13 @@ To satisfy the password strength criteria, a password must contain:
 
 ### Anchors
 
+Anchors do not match any characters, but rather match a position before, after, or between characters. In single-line mode, the `^` anchor matches the beginning of the string.
+
+An input of `abc123` would pass if tested against the expression `/^abc/` because the three letters are positioned at the beginning of the string, in their respective order.
+
+In the case of the password strength validation Regex, the `^` is simply ensuring that a match is positioned at the start of the string. The anchor in this scenario is essentially determining that any syntax component succeeding will pass if inputted at the beginning of the string (whether it be a lowercase, uppercase, numeric, or special character).
+
+
 ### Quantifiers
 
 ### OR Operator
