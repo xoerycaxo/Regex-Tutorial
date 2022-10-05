@@ -81,12 +81,12 @@ In the case of the password strength validation Regex, the `(?=.*[A-Z])` for exa
 
 ### Resources
 
-* [](https://regexr.com/)
+* [Link](https://regexr.com/)
 
-* [](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
+* [Link](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
 
 ## Author
 
 Written by Eryva Spence- Pieritz a learning full stack developer.
 
-To see more projects please visit: [](https://github.com/xoerycaxo)
+To see more projects please visit: [Link](https://github.com/xoerycaxo)
