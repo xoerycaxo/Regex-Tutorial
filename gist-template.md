@@ -1,10 +1,20 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+Regular Expressions, or more commonly abbreviated as Regex, are powerful, case-sensitive patterns composed of single or a combination of single and special characters for the purpose of searching through and extracting information from text through matching, validating, locating, parsing, replacing, and/or managing target strings.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this Regex Rundown tutorial, we will be discussing validating a strong password by breaking down each component of the syntax below.
+
+`^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})`
+
+To satisfy the password strength criteria, a password must contain:
+
+* At least 1 lowercase alphabetical character: `(?=.*[a-z])`
+* At least 1 uppercase alphabetical character: `(?=.*[A-Z])`
+* At least 1 numeric character: `(?=.*[0-9])`
+* At least 1 special character: `(?=.*[!@#$%^&*])`
+* A minimum of 8 characters: `(?=.{8,})`
 
 ## Table of Contents
 
