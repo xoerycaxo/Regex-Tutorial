@@ -43,9 +43,19 @@ In the case of the password strength validation Regex, the `^` is simply ensurin
 
 ### Quantifiers
 
-### OR Operator
+Quantifiers specify how many instances of a character, group, or character class an input must have in order for a match to be found.
+
+The * quantifier `(*[a-z]`, `*[A-Z]`, `*[0-9]`, and `*[!@#\$%\^&\*])` matches a password that has 0 or more instances of any syntax component succeeding it.
+
+A quantifier of `{8}` would only match a password of exactly 8 characters in length. A quantifier of `{8, 16}` would match any password between 8 and 16 characters.
+
+In the case of the password strength validation Regex, the `{}` quantifier `{8,}` matches a password that has AT LEAST 8 characters.
 
 ### Character Classes
+
+Character classes, or character sets, match any character in the set.
+
+In the case of the password strength validation Regex, the `.` before every `*` quantifier in `^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})` will match any character.
 
 ### Flags
 
