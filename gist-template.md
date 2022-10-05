@@ -57,12 +57,17 @@ Character classes, or character sets, match any character in the set.
 
 In the case of the password strength validation Regex, the `.` before every `*` quantifier in `^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})` will match any character.
 
-### Flags
-
 ### Grouping and Capturing
+
+Capturing groups allow mulitple characters to be treated as single separate units by encapsulating them inside a set of parantheses.
+
+In the case of the password strength validation Regex: `^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})` notice how the lowercase, uppercase, numeric, special character, and password length validations are all grouped inside their own set of parentheses. This allows more convenient access to the content of specific groups, if necessary.
 
 ### Bracket Expressions
 
+Bracket expressions are composed of characters and/or character classes encompassed within brackets.
+
+In the case of the password strength validation Regex, bracket expressions include `[a-z]` and `[A-Z]` which match any character from lowercase `a` through `z` and uppercase `A` through `Z`, respectively. The `[!@#\$%\^&\*]` will match any of the special characters within that set as well.
 ### Greedy and Lazy Match
 
 ### Boundaries
